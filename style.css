@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: joseSB;
+    color: #fff;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+/* body::-webkit-scrollbar {
+    display: none;
+} */
+
+@font-face {
+    font-family: 'joseR';
+    src: url(./Assets/Fonts/JosefinSans-Regular.woff2) format('truetype');
+}
+
+@font-face {
+    font-family: 'joseL';
+    src: url(./Assets/Fonts/JosefinSans-Light.woff2) format('truetype');
+}
+
+@font-face {
+    font-family: 'joseM';
+    src: url(./Assets/Fonts/JosefinSans-Medium.woff2) format('truetype');
+}
+
+@font-face {
+    font-family: 'joseSB';
+    src: url(./Assets/Fonts/JosefinSans-SemiBold.woff2) format('truetype');
+}
+
+@font-face {
+    font-family: 'nato';
+    src: url(./Assets/Fonts/NotoSerifJP-Regular.woff2) format('truetype');
+}
+
+.mousefollower{
+    scale: 2;
+}
+
+/**************************************** MAIN ****************************************/
+
+#main{
+    position: relative;
+    width: 100vw;
+    background-color: #151515;
+    overflow: hidden;
+}
+
+/**************************************** #PAGE1 ****************************************/
+
+
+#page1{
+    width: 100vw;
+    height: 56.25vw;
+    padding-top: 1px;
+    padding-left: 3vw;
+}
+
+.heros{
+    display: flex;
+}
+
+#hero1{
+    margin-top: 18vw;
+    /* display: flex; */
+}
+
+#hero1 h1, #hero2 h1{
+    line-height: 7vw;
+    font-size: 13vw;
+    font-family: joseM;
+}
+
+#hero-down{
+    margin-top: 5.8vw;
+}
+
+#hero-down h3{
+    font-size: 2vw;
+    line-height: 2.5vw;
+}
+
+/**************************************** ABOUT ****************************************/
+
+#about{
+    width: 100%;
+    height: 112.50vw;
+    /* background-color: red; */
+}
+
+#about-start{
+    margin-top: 12vw;
+}
+
+.about-start-elem{
+    justify-content: center;
+    display: flex;
+    font-size: 5vw;
+}
+
+#about-main{
+    margin-top: 38vw;
+    padding: 0 5vw;
+}
+
+#about-main h4{
+    font-size: 2.5vw;
+    line-height: 3vw;
+}
+
+#about-main h4:nth-child(1){
+    margin-bottom: 3vw;
+}
+
+/**************************************** PROJECTS ****************************************/
+
+#projects{
+    width: 100%;
+    height: 200.50vw;
+    padding: 5vw;
+    position: relative;
+}
+
+#projects #h2{
+    margin-top: 16vw;
+    display: flex;
+}
+
+#projects h2{
+    font-size: 4vw;
+}
+
+.pros{
+    /* background-color: red; */
+    position: relative;
+    width: 46vw;
+    height: 25vw;
+    border-radius: 1.5vw;
+    /* overflow: hidden; */
+    position: absolute;
+    box-shadow: 0 0 30px rgb(40, 40, 40);
+}
+
+.pros i{
+    margin-left: 1vw;
+}
+
+.pros video{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5vw;
+    object-fit: cover; 
+    z-index: 90;
+}
+
+.pros #h3{
+    display: flex;
+    position: absolute;
+    top: -5vw;
+    left: 3vw;
+    font-size: 3vw;
+    z-index: 80;
+}
+
+#pro1{
+    top: 57vw;
+}
+
+#pro2{
+    top: 100vw;
+    left: 49vw;
+}
+
+#pro3{
+    top: 143vw;
+}
+
+#vist-all{
+    position: absolute;
+    top: 170vw;
+    left: 50vw;
+    transform: translateX(-50%);
+    height: 20vw;
+    width: 20vw;
+    border-radius: 50%;
+    border: 0.077vw solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1vw;
+    font-size: 2vw;
+    transition: all ease 0.2s; 
+}
+
+#vist-all i{
+    font-size: 4vw;
+}
+
+#vist-all:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/**************************************** SKILLS ****************************************/
+
+#skills{
+    width: 100%;
+    height: 100.50vw;
+    position: relative;
+}
+
+#skill-head{
+    margin-top: 26vw;
+    font-size: 2.5vw;
+    display: flex;
+    justify-content: center;
+}
+
+#skill-head h1{
+    padding: 1vw 1vw 0 1vw;
+    border-top: 0.077vw solid #fff;
+    border-bottom: 0.077vw solid #fff;
+}
+
+#skill-left{
+    position: absolute;
+    border-radius: 50%;
+    border: 0.1vw solid #fff;
+    height: 100vw;
+    width: 100vw;
+    top: 50%;
+    left: -5;
+    transform: translate(-50%, -50%);
+}
+
+#skill-right{
+    position: absolute;
+    border-radius: 50%;
+    border: 0.1vw solid #fff;
+    height: 100vw;
+    width: 100vw;
+    top: 50%;
+    left: 105%;
+    transform: translate(-50%, -50%);
+}
+
+/**************************************** OVERLAY - 1 ****************************************/
+
+#overlay-1{
+    width: 100vw;
+    height: 168.75vw;
+    position: absolute;
+    top: 0;
+    /* background-color: green; */
+    /* position: relative; */
+    z-index: 999;
+}
+
+.arrows{
+    position: absolute;
+    height: 32vw;
+    mix-blend-mode: difference;
+}
+
+#b12{
+    top: 2vw;
+    left: 84vw;
+    position: absolute;
+    height: 12vw;
+    mix-blend-mode: difference;
+}
+
+.jap{
+    position: absolute;
+    mix-blend-mode: difference;
+    height: 20vw;
+}
+
+#a7{
+    top: 28vw;
+    left: -2.5vw;
+    height: 32vw;
+}
+
+#a6{
+    top: 32vw;
+    left: 42vw;
+    height: 20vw;
+}
+
+#a3{
+    top: 18vw;
+    left: 68vw;
+    height: 35vw;
+}
+
+#a8{
+    top: 103vw;
+    left: 14vw;
+    height: 22vw;
+    rotate: -120deg;
+}
+
+#a2{
+    left: 5vw;
+    top: 55vw;
+    height: 18vw;
+    rotate: 110deg;
+}
+
+#a1{
+    top: 36vw;
+    left: 68vw;
+    height: 33vw;
+    rotate: 150deg;
+}
+
+#na{
+    top: 78vw;
+    left: -2vw;
+    rotate: 30deg;
+}
+
+#ku{
+    top: 100vw;
+    left: 60vw;
+    rotate: 30deg;
+}
+
+#ru{
+    top: 70vw;
+    left: 75vw;
+    rotate: 20deg;
+}
