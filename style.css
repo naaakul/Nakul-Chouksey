@@ -49,8 +49,8 @@ html, body{
 #main{
     position: relative;
     width: 100vw;
-    background-color: #151515;
-    overflow: hidden;
+    background: rgb(8,8,8);
+    background: linear-gradient(109deg, rgba(8,8,8,1) 0%, rgb(27, 27, 27) 35%, rgba(10,10,10,1) 100%);
 }
 
 /**************************************** #PAGE1 ****************************************/
@@ -214,7 +214,7 @@ html, body{
 
 #skills{
     width: 100%;
-    height: 100.50vw;
+    height: 150vw;
     position: relative;
 }
 
@@ -235,22 +235,189 @@ html, body{
     position: absolute;
     border-radius: 50%;
     border: 0.1vw solid #fff;
-    height: 100vw;
-    width: 100vw;
-    top: 50%;
-    left: -5;
+    height: 56.25vw;
+    width: 56.25vw;
+    top: 110vw;
+    left: 21%;
     transform: translate(-50%, -50%);
+    /* background-color: rgba(255, 0, 0, 0.1); */
+    animation-name: rotate3;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
 #skill-right{
     position: absolute;
     border-radius: 50%;
     border: 0.1vw solid #fff;
-    height: 100vw;
-    width: 100vw;
-    top: 50%;
-    left: 105%;
+    height: 56.25vw;
+    width: 56.25vw;
+    top: 110vw;
+    left: 79%;
     transform: translate(-50%, -50%);
+    /* background-color: rgba(0, 0, 255, 0.1); */
+    animation-name: rotate2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+#skill-center{
+    position: absolute;
+    border-radius: 50%;
+    border: 0.1vw solid #fff;
+    height: 56.25vw;
+    width: 56.25vw;
+    top: 60vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: rgba(255, 255, 0, 0.1); */
+    animation-name: rotate1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate1 {
+    0%{        
+        top: 60vw;
+        left: 50%;
+    }
+    10%{
+        top: 110vw;
+        left: 79%;
+    }
+    33.3%{
+        top: 110vw;
+        left: 79%;
+    }
+    43.3%{
+        top: 110vw;
+        left: 21%;
+    }
+    66.6%{
+        top: 110vw;
+        left: 21%;
+    }
+    76.6%{
+        top: 60vw;
+        left: 50%;
+    }
+}
+
+@keyframes rotate2 {
+    0%{        
+        top: 110vw;
+        left: 79%;
+    }
+    10%{
+        top: 110vw;
+        left: 21%;
+    }
+    33.3%{
+        top: 110vw;
+        left: 21%;
+    }
+    43.3%{
+        top: 60vw;
+        left: 50%;
+    }
+    66.6%{
+        top: 60vw;
+        left: 50%;
+    }
+    76.6%{
+        top: 110vw;
+        left: 79%;
+    }
+}
+
+@keyframes rotate3 {
+    0%{        
+        top: 110vw;
+        left: 21%;
+    }
+    10%{
+        top: 60vw;
+        left: 50%;
+    }
+    33.3%{
+        top: 60vw;
+        left: 50%;
+    }
+    43.3%{
+        top: 110vw;
+        left: 79%;
+    }
+    66.6%{
+        top: 110vw;
+        left: 79%;
+    }
+    76.6%{
+        top: 110vw;
+        left: 21%;
+    }
+}
+
+/**************************************** CONTACT ****************************************/
+
+#contact{
+    width: 100vw;
+    height: 56.25vw;
+    padding: 5vw;
+    /* background-color: red; */
+}
+
+#con{
+    width: 90vw;
+    height: 46.25vw;
+    border: 0.1vw solid #fff;
+    display: flex;
+}
+
+#con-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    border-right: 0.1vw solid #fff;
+}
+
+#con-left-h1{
+    margin-top: 1vw;
+    display: flex;
+    font-size: 1.1vw;
+}
+
+#con-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#con-right-h1{
+    margin-top: 1vw;
+    display: flex;
+    font-size: 1.1vw;
+}
+
+/**************************************** OVERLAY - 1 ****************************************/
+
+#footer{
+    width: 100vw;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+
+#footer h1{
+    font-size: 1.5vw;
+}
+
+#footer span{
+    text-decoration: line-through;
+    text-decoration-color: rgb(255, 255, 255);
 }
 
 /**************************************** OVERLAY - 1 ****************************************/
@@ -282,7 +449,7 @@ html, body{
 .jap{
     position: absolute;
     mix-blend-mode: difference;
-    height: 20vw;
+    height: 13vw;
 }
 
 #a7{
@@ -321,6 +488,40 @@ html, body{
     top: 36vw;
     left: 68vw;
     height: 33vw;
+    rotate: 150deg;
+}
+
+#a9{
+    top: 130vw;
+    left: 70vw;
+    height: 33vw;
+}
+
+#a10{
+    top: 190vw;
+    left: 70vw;
+    height: 20vw;
+    rotate: 160deg;
+}
+
+#a11{
+    top: 250vw;
+    left: 80vw;
+    height: 28vw;
+    rotate: -90deg;
+}
+
+#a5{
+    top: 120vw;
+    left: 40vw;
+    height: 23vw;
+    rotate: 180deg;
+}
+
+#a4{
+    top: 220vw;
+    left: 50vw;
+    height: 28vw;
     rotate: 150deg;
 }
 
