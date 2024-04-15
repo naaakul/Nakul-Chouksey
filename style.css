@@ -371,6 +371,7 @@ html, body{
     height: 46.25vw;
     border: 0.1vw solid #fff;
     display: flex;
+    overflow: hidden;
 }
 
 #con-left{
