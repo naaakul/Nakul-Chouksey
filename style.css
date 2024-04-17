@@ -50,7 +50,7 @@ html, body{
     position: relative;
     width: 100vw;
     background: rgb(8,8,8);
-    background: linear-gradient(109deg, rgba(8,8,8,1) 0%, rgb(27, 27, 27) 35%, rgba(10,10,10,1) 100%);
+    background: linear-gradient(109deg, rgba(8,8,8,1) 0%, rgb(44, 44, 44) 35%, rgba(10,10,10,1) 100%);
 }
 
 /**************************************** #PAGE1 ****************************************/
@@ -78,13 +78,9 @@ html, body{
     font-family: joseM;
 }
 
-#hero-down{
-    margin-top: 5.8vw;
-}
-
 #hero-down h3{
     font-size: 2vw;
-    line-height: 2.5vw;
+    line-height: 1.5vw;
 }
 
 /**************************************** ABOUT ****************************************/
@@ -126,6 +122,7 @@ html, body{
     height: 200.50vw;
     padding: 5vw;
     position: relative;
+    z-index: 9999;
 }
 
 #projects #h2{
@@ -139,17 +136,13 @@ html, body{
 
 .pros{
     /* background-color: red; */
-    position: relative;
+    /* position: relative; */
     width: 46vw;
     height: 25vw;
     border-radius: 1.5vw;
     /* overflow: hidden; */
     position: absolute;
-    box-shadow: 0 0 30px rgb(40, 40, 40);
-}
-
-.pros i{
-    margin-left: 1vw;
+    box-shadow: 0 0 30px rgb(10, 10, 10);
 }
 
 .pros video{
@@ -171,6 +164,16 @@ html, body{
     z-index: 80;
 }
 
+.pros i{
+    top: 8.8vw;
+    position: absolute;
+    font-size: 5vw;
+    padding: 1.5vw  1.7vw;
+    background-color: #fff;
+    color: black;
+    border-radius: 10vw;
+}
+
 #pro1{
     top: 57vw;
 }
@@ -184,9 +187,21 @@ html, body{
     top: 143vw;
 }
 
+#pro1 i{
+    left: 50vw;
+}
+
+#pro2 i{
+    left: -12.5vw;
+}
+
+#pro3 i{
+    left: 50vw;
+}
+
 #vist-all{
     position: absolute;
-    top: 170vw;
+    top: 183vw;
     left: 50vw;
     transform: translateX(-50%);
     height: 20vw;
@@ -202,12 +217,26 @@ html, body{
     transition: all ease 0.2s; 
 }
 
+#vist-all h4{
+    transition: all ease 0.2s; 
+    font-size: 2vw;
+}
+
 #vist-all i{
+    transition: all ease 0.2s; 
     font-size: 4vw;
 }
 
 #vist-all:hover{
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgb(255, 255, 255);
+}
+
+#vist-all:hover h4{
+    color: black;
+}
+
+#vist-all:hover i{
+    color: black;
 }
 
 /**************************************** SKILLS ****************************************/
@@ -383,12 +412,13 @@ html, body{
 }
 
 #con-left-h1{
-    margin-top: 1vw;
+    margin-top: 3vw;
     display: flex;
     font-size: 1.1vw;
 }
 
 #con-right{
+    position: relative;
     width: 50%;
     height: 100%;
     display: flex;
@@ -396,12 +426,69 @@ html, body{
 }
 
 #con-right-h1{
-    margin-top: 1vw;
+    margin-top: 3vw;
     display: flex;
     font-size: 1.1vw;
 }
 
-/**************************************** OVERLAY - 1 ****************************************/
+#mess-form{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+form{
+    /* background-color: blue; */
+    width: 100%;
+    display: flex;
+    gap: 2vw;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea{
+    padding: 1vw;
+    border-radius: 1vw;
+    font-size: 1.3vw;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.1);
+    outline: none;
+    border: none;
+    box-shadow: 0 0 30px rgb(38, 38, 38);
+}
+
+#message{
+    height: 13vw;
+    resize: none;
+    color: #fff;
+}
+
+#message::-webkit-scrollbar{
+    background-color: transparent;
+}
+
+#message::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 255, 255, 0.281);
+    border-radius: 1vw;
+    cursor: grab;
+}
+
+#submit{
+    cursor: pointer;
+    color: black;
+    padding: .9vw 2vw;
+    border-radius: 10vw;
+    font-size: 1.3vw;
+    margin-bottom: 3vw;
+    background-color: rgba(255, 255, 255, 0.852);
+}
+
+/**************************************** FOOTER ****************************************/
 
 #footer{
     width: 100vw;
@@ -412,8 +499,8 @@ html, body{
     /* background-color: red; */
 }
 
-#footer h1{
-    font-size: 1.5vw;
+#footer h2{
+    font-size: 1.7vw;
 }
 
 #footer span{
@@ -431,9 +518,12 @@ html, body{
     /* background-color: green; */
     /* position: relative; */
     z-index: 999;
+    opacity: 0.65;
+    mix-blend-mode: difference;
+    /* display: none; */
 }
 
-.arrows{
+.brush{
     position: absolute;
     height: 32vw;
     mix-blend-mode: difference;
@@ -442,15 +532,121 @@ html, body{
 #b12{
     top: 2vw;
     left: 84vw;
-    position: absolute;
     height: 12vw;
-    mix-blend-mode: difference;
+}
+
+#b1{
+    top: 130vw;
+    left: -1vw;
+    height: 18vw;
+    rotate: -50deg;
+}
+
+#b2{
+    top: -16vw;
+    left: 10vw;
+    height: 18vw;
+    rotate: -20deg;
+}
+
+#b3{
+    top: 260vw;
+    left: -1vw;
+    height: 18vw;
+    rotate: -50deg;
+}
+
+#b4{
+    top: 220vw;
+    left: -1vw;
+    height: 18vw;
+    rotate: -50deg;
+}
+
+#b5{
+    top: 370vw;
+    left: 60vw;
+    height: 12vw;
+    rotate: -50deg;
+}
+
+#b6{
+    top: 335vw;
+    left: -5vw;
+    height: 15vw;
+    rotate: -50deg;
+}
+
+#b7{
+    top: 395vw;
+    left: 94vw;
+    height: 15vw;
+    rotate: -120deg;
+}
+
+#b9{
+    top: 440vw;
+    left: 30vw;
+    height: 18vw;
+    rotate: 20deg;
+}
+
+#b11{
+    top: 600vw;
+    left: -10.5vw;
+    height: 18vw;
+    rotate: 20deg;
+}
+
+#b13{
+    top: 295vw;
+    left: 42vw;
+    height: 12vw;
+    rotate: -50deg;
+}
+
+#b14{
+    top: 215vw;
+    left: 62vw;
+    height: 12vw;
+    rotate: -50deg;
+}
+
+#b0{
+    top: 628vw;
+    left: 85.5vw;
+    height: 38vw;
+    rotate: -30deg;
 }
 
 .jap{
     position: absolute;
     mix-blend-mode: difference;
     height: 13vw;
+}
+
+#na{
+    top: 78vw;
+    left: -2vw;
+    rotate: 30deg;
+}
+
+#ku{
+    top: 106vw;
+    left: 60vw;
+    rotate: 30deg;
+}
+
+#ru{
+    top: 70vw;
+    left: 75vw;
+    rotate: 20deg;
+}
+
+.arrows{
+    position: absolute;
+    height: 32vw;
+    mix-blend-mode: difference;
 }
 
 #a7{
@@ -486,9 +682,9 @@ html, body{
 }
 
 #a1{
-    top: 36vw;
+    top: 43vw;
     left: 68vw;
-    height: 33vw;
+    height: 23vw;
     rotate: 150deg;
 }
 
@@ -505,17 +701,10 @@ html, body{
     rotate: 160deg;
 }
 
-#a11{
-    top: 250vw;
-    left: 80vw;
-    height: 28vw;
-    rotate: -90deg;
-}
-
 #a5{
     top: 120vw;
     left: 40vw;
-    height: 23vw;
+    height: 13vw;
     rotate: 180deg;
 }
 
@@ -526,20 +715,192 @@ html, body{
     rotate: 150deg;
 }
 
-#na{
-    top: 78vw;
-    left: -2vw;
-    rotate: 30deg;
+#a11{
+    top: 250vw;
+    left: 80vw;
+    height: 28vw;
+    rotate: -90deg;
 }
 
-#ku{
-    top: 100vw;
-    left: 60vw;
-    rotate: 30deg;
+#a12{
+    top: 290vw;
+    left: 15vw;
+    height: 17vw;
+    rotate: 40deg;
 }
 
-#ru{
-    top: 70vw;
+#a13{
+    top: 310vw;
+    left: 1vw;
+    height: 17vw;
+    rotate: -90deg;
+}
+
+#a14{
+    top: 330vw;
+    left: 36vw;
+    height: 17vw;
+    rotate: -40deg;
+}
+
+#a15{
+    top: 350vw;
+    left: 66vw;
+    height: 17vw;
+    rotate: 40deg;
+}
+
+#a16{
+    top: 317vw;
+    left: 76vw;
+    height: 17vw;
+    rotate: -40deg;
+}
+
+#a17{
+    top: 278vw;
+    left: 68vw;
+    height: 13vw;
+    rotate: 40deg;
+}
+
+#a18{
+    top: 377vw;
     left: 75vw;
-    rotate: 20deg;
+    height: 17vw;
+    rotate: 10deg;
+}
+
+#a19{
+    top: 370vw;
+    left: 12vw;
+    height: 17vw;
+    rotate: 150deg;
+}
+
+#a20{
+    top: 397vw;
+    left: 2vw;
+    height: 17vw;
+    rotate: -100deg;
+}
+
+#a21{
+    top: 420vw;
+    left: 77vw;
+    height: 17vw;
+    rotate: 220deg;
+}
+
+#a22{
+    top: 430vw;
+    left: 10vw;
+    height: 17vw;
+    rotate: 70deg;
+}
+
+#a23{
+    top: 430vw;
+    left: 63vw;
+    height: 17vw;
+    rotate: 70deg;
+}
+
+#a23{
+    top: 430vw;
+    left: 63vw;
+    height: 17vw;
+    rotate: 70deg;
+}
+
+#a24{
+    top: 455vw;
+    left: 5vw;
+    height: 13vw;
+    rotate: -70deg;
+}
+
+
+#a25{
+    top: 455vw;
+    left: 80vw;
+    height: 17vw;
+    rotate: 170deg;
+}
+
+#a26{
+    top: 405vw;
+    left: 50vw;
+    height: 17vw;
+    rotate: 170deg;
+}
+
+#a27{
+    top: 485vw;
+    left: 87vw;
+    height: 17vw;
+    rotate: 170deg;
+}
+
+#a28{
+    top: 480vw;
+    left: -7vw;
+    height: 26vw;
+    rotate: 120deg;
+}
+
+#a29{
+    top: 567vw;
+    left: -1vw;
+    height: 15vw;
+    rotate: 120deg;
+}
+
+#a33{
+    top: 569vw;
+    left: 50vw;
+    height: 17vw;
+    rotate: -40deg;
+}
+
+#a31{
+    top: 229vw;
+    left: 20vw;
+    height: 17vw;
+    rotate: -40deg;
+}
+
+#a32{
+    top: 198vw;
+    left: 20vw;
+    height: 17vw;
+    rotate: -40deg;
+}
+
+#a34{
+    top: -15vw;
+    left: 50vw;
+    height: 17vw;
+    rotate: -40deg;
+}
+
+#a35{
+    top: 630vw;
+    left: 70vw;
+    height: 12vw;
+    rotate: -40deg;
+}
+
+#a36{
+    top: 631vw;
+    left: -4vw;
+    height: 17vw;
+    rotate: -40deg;
+}
+
+#a37{
+    top: 571vw;
+    left: 90vw;
+    height: 17vw;
+    rotate: -130deg;
 }
