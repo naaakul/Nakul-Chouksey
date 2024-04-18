@@ -512,14 +512,15 @@ input, textarea{
 
 #overlay-1{
     width: 100vw;
-    height: 168.75vw;
+    height: 733.2vw;
     position: absolute;
-    top: 0;
+    top: -58vw;
     /* background-color: green; */
     /* position: relative; */
-    z-index: 999;
+    z-index: 99999;
     opacity: 0.65;
     mix-blend-mode: difference;
+    /* background-color: rgb(79, 51, 51) ; */
     /* display: none; */
 }
 
@@ -543,7 +544,7 @@ input, textarea{
 }
 
 #b2{
-    top: -16vw;
+    top: -2vw;
     left: 10vw;
     height: 18vw;
     rotate: -20deg;
