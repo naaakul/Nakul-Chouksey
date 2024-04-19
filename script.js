@@ -38,6 +38,24 @@ function cursor(){
       });
 }
 
+function about(){
+  gsap.from("#about-main h4", {
+    opacity: 0,
+    duration: 20,
+    scrollTrigger:{
+      trigger:"#about-main",
+      scroller:"#main",
+      // markers:true,
+      end:"top 0",
+      start:"top 100%",
+      stagger:0.1,
+      scrub:1,
+    }
+  })
+}
+
 cursor();
 
 loco();
+
+about();

@@ -42,6 +42,7 @@ html, body{
 
 .mousefollower{
     scale: 2;
+    z-index: 5;
 }
 
 /**************************************** MAIN ****************************************/
@@ -50,7 +51,7 @@ html, body{
     position: relative;
     width: 100vw;
     background: rgb(8,8,8);
-    background: linear-gradient(109deg, rgba(8,8,8,1) 0%, rgb(44, 44, 44) 35%, rgba(10,10,10,1) 100%);
+    background: linear-gradient(109deg, rgba(8,8,8,1) 0%, rgb(40, 40, 40) 35%, rgba(10,10,10,1) 100%);
 }
 
 /**************************************** #PAGE1 ****************************************/
@@ -386,56 +387,141 @@ html, body{
     }
 }
 
+#skills i{
+    font-size: 7vw;
+    position: absolute;
+}
+
+#skills h3{
+    font-size: 2vw;
+    position: absolute;
+    width: 1vw;
+    text-transform: uppercase;
+}
+
+#c1{
+    top: 12vw;
+    left: 12vw;
+}
+
+#c2{
+    top: 12vw;
+    left: 35.5vw;
+}
+
+#c3{
+    top: 24.5vw;
+    left: 35.5vw;
+}
+
+#c4{
+    top: 24.5vw;
+    left: 12vw;
+}
+
+#c5{
+    top: 37vw;
+    left: 12vw;
+}
+
+#c6{
+    top: 37vw;
+    left: 35.5vw;
+}
+
+#l1{
+    top: 13vw;
+    left: 12vw;
+}
+
+#l2{
+    top: 13vw;
+    left: 35.5vw;
+}
+
+#l3{
+    top: 25vw;
+    left: 35.5vw;
+}
+
+#l4{
+    top: 25vw;
+    left: 12vw;
+}
+
+#l5{
+    top: 39vw;
+    left: 13vw;
+}
+
+#l6{
+    top: 39vw;
+    left: 32.2vw;
+}
+
+#r1{
+    top: 12vw;
+    left: 12vw;
+}
+
+#r2{
+    top: 12vw;
+    left: 35.5vw;
+}
+
+#r5{
+    top: 26vw;
+    left: 26vw;
+}
+
+#r3{
+    top: 37vw;
+    left: 12vw;
+}
+
+#r4{
+    top: 37vw;
+    left: 35.5vw;
+}
+
 /**************************************** CONTACT ****************************************/
 
 #contact{
     width: 100vw;
-    height: 56.25vw;
+    height: 60.5vw;
     padding: 5vw;
-    /* background-color: red; */
+    /* background-color: greenyellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #con{
-    width: 90vw;
-    height: 46.25vw;
-    border: 0.1vw solid #fff;
-    display: flex;
-    overflow: hidden;
-}
-
-#con-left{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    border-right: 0.1vw solid #fff;
-}
-
-#con-left-h1{
-    margin-top: 3vw;
-    display: flex;
-    font-size: 1.1vw;
-}
-
-#con-right{
     position: relative;
-    width: 50%;
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-#con-right-h1{
-    margin-top: 3vw;
+#con-in-h1{
     display: flex;
     font-size: 1.1vw;
+    align-items: center;
+    /* background-color: red; */
+    z-index: 1;
 }
 
 #mess-form{
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    z-index: 6;
+    /* position: absolute; */
+    width: 80%;
+    height: 87%;
+    border-radius: 1vw;
     /* background-color: red; */
+    background-color: rgb(10,10,10);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -443,6 +529,7 @@ html, body{
 }
 
 form{
+    z-index: 9;
     /* background-color: blue; */
     width: 100%;
     display: flex;
@@ -452,6 +539,7 @@ form{
 }
 
 input, textarea{
+    z-index: 6;
     padding: 1vw;
     border-radius: 1vw;
     font-size: 1.3vw;
@@ -488,39 +576,52 @@ input, textarea{
     background-color: rgba(255, 255, 255, 0.852);
 }
 
+#social{
+    display: flex;
+    width: 50%;
+    background-color: rgba(10,10,10);
+    font-size: 2.5vw;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vw;
+    border-radius: 1vw;
+    padding: 1vw 2vw;
+}
+
+#social a{
+    text-decoration: none;
+    transition: all ease 0.2s;
+}
+
+#social a:hover{
+    scale: 1.2;
+}
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 /**************************************** FOOTER ****************************************/
 
 #footer{
     width: 100vw;
-    height: 5vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: red; */
-}
-
-#footer h2{
-    font-size: 1.7vw;
-}
-
-#footer span{
-    text-decoration: line-through;
-    text-decoration-color: rgb(255, 255, 255);
+    height: 0vw;
 }
 
 /**************************************** OVERLAY - 1 ****************************************/
 
 #overlay-1{
     width: 100vw;
-    height: 733.2vw;
+    height: 731.9vw;
     position: absolute;
     top: -58vw;
     /* background-color: green; */
     /* position: relative; */
-    z-index: 99999;
-    opacity: 0.65;
+    z-index: -1;
+    opacity: 0.25;
     mix-blend-mode: difference;
-    /* background-color: rgb(79, 51, 51) ; */
+    /* background-color: rgb(79, 51, 51); */
     /* display: none; */
 }
 
@@ -531,13 +632,13 @@ input, textarea{
 }
 
 #b12{
-    top: 2vw;
+    top: 12vw;
     left: 84vw;
     height: 12vw;
 }
 
 #b1{
-    top: 130vw;
+    top: 142vw;
     left: -1vw;
     height: 18vw;
     rotate: -50deg;
@@ -558,21 +659,21 @@ input, textarea{
 }
 
 #b4{
-    top: 220vw;
+    top: 210vw;
     left: -1vw;
     height: 18vw;
     rotate: -50deg;
 }
 
 #b5{
-    top: 370vw;
+    top: 380vw;
     left: 60vw;
     height: 12vw;
     rotate: -50deg;
 }
 
 #b6{
-    top: 335vw;
+    top: 365vw;
     left: -5vw;
     height: 15vw;
     rotate: -50deg;
@@ -586,35 +687,35 @@ input, textarea{
 }
 
 #b9{
-    top: 440vw;
+    top: 506vw;
     left: 30vw;
     height: 18vw;
     rotate: 20deg;
 }
 
 #b11{
-    top: 600vw;
-    left: -10.5vw;
-    height: 18vw;
+    top: 653vw;
+    left: 30.5vw;
+    height: 10vw;
     rotate: 20deg;
 }
 
 #b13{
-    top: 295vw;
+    top: 325vw;
     left: 42vw;
     height: 12vw;
     rotate: -50deg;
 }
 
 #b14{
-    top: 215vw;
-    left: 62vw;
+    top: 205vw;
+    left: 52vw;
     height: 12vw;
     rotate: -50deg;
 }
 
 #b0{
-    top: 628vw;
+    top: 720vw;
     left: 85.5vw;
     height: 38vw;
     rotate: -30deg;
@@ -627,19 +728,19 @@ input, textarea{
 }
 
 #na{
-    top: 78vw;
+    top: 90vw;
     left: -2vw;
     rotate: 30deg;
 }
 
 #ku{
-    top: 106vw;
+    top: 121vw;
     left: 60vw;
     rotate: 30deg;
 }
 
 #ru{
-    top: 70vw;
+    top: 87vw;
     left: 75vw;
     rotate: 20deg;
 }
@@ -651,25 +752,25 @@ input, textarea{
 }
 
 #a7{
-    top: 28vw;
+    top: 38vw;
     left: -2.5vw;
     height: 32vw;
 }
 
 #a6{
-    top: 32vw;
+    top: 42vw;
     left: 42vw;
     height: 20vw;
 }
 
 #a3{
-    top: 18vw;
+    top: 28vw;
     left: 68vw;
     height: 35vw;
 }
 
 #a8{
-    top: 103vw;
+    top: 116vw;
     left: 14vw;
     height: 22vw;
     rotate: -120deg;
@@ -677,145 +778,145 @@ input, textarea{
 
 #a2{
     left: 5vw;
-    top: 55vw;
+    top: 65vw;
     height: 18vw;
     rotate: 110deg;
 }
 
 #a1{
-    top: 43vw;
+    top: 53vw;
     left: 68vw;
     height: 23vw;
     rotate: 150deg;
 }
 
 #a9{
-    top: 130vw;
+    top: 140vw;
     left: 70vw;
     height: 33vw;
 }
 
 #a10{
-    top: 190vw;
+    top: 209vw;
     left: 70vw;
     height: 20vw;
     rotate: 160deg;
 }
 
 #a5{
-    top: 120vw;
-    left: 40vw;
+    top: 141vw;
+    left: 48vw;
     height: 13vw;
     rotate: 180deg;
 }
 
 #a4{
-    top: 220vw;
+    top: 240vw;
     left: 50vw;
     height: 28vw;
     rotate: 150deg;
 }
 
 #a11{
-    top: 250vw;
+    top: 260vw;
     left: 80vw;
     height: 28vw;
     rotate: -90deg;
 }
 
 #a12{
-    top: 290vw;
+    top: 305vw;
     left: 15vw;
     height: 17vw;
     rotate: 40deg;
 }
 
 #a13{
-    top: 310vw;
+    top: 343vw;
     left: 1vw;
     height: 17vw;
     rotate: -90deg;
 }
 
 #a14{
-    top: 330vw;
+    top: 340vw;
     left: 36vw;
     height: 17vw;
     rotate: -40deg;
 }
 
 #a15{
-    top: 350vw;
+    top: 360vw;
     left: 66vw;
     height: 17vw;
     rotate: 40deg;
 }
 
 #a16{
-    top: 317vw;
+    top: 324vw;
     left: 76vw;
     height: 17vw;
     rotate: -40deg;
 }
 
 #a17{
-    top: 278vw;
+    top: 298vw;
     left: 68vw;
     height: 13vw;
     rotate: 40deg;
 }
 
 #a18{
-    top: 377vw;
+    top: 387vw;
     left: 75vw;
     height: 17vw;
     rotate: 10deg;
 }
 
 #a19{
-    top: 370vw;
-    left: 12vw;
+    top: 374vw;
+    left: 32vw;
     height: 17vw;
     rotate: 150deg;
 }
 
 #a20{
-    top: 397vw;
+    top: 407vw;
     left: 2vw;
     height: 17vw;
     rotate: -100deg;
 }
 
 #a21{
-    top: 420vw;
+    top: 426vw;
     left: 77vw;
     height: 17vw;
     rotate: 220deg;
 }
 
 #a22{
-    top: 430vw;
+    top: 455vw;
     left: 10vw;
     height: 17vw;
     rotate: 70deg;
 }
 
 #a23{
-    top: 430vw;
+    top: 440vw;
     left: 63vw;
     height: 17vw;
     rotate: 70deg;
 }
 
 #a23{
-    top: 430vw;
+    top: 466vw;
     left: 63vw;
     height: 17vw;
     rotate: 70deg;
 }
 
 #a24{
-    top: 455vw;
+    top: 495vw;
     left: 5vw;
     height: 13vw;
     rotate: -70deg;
@@ -823,58 +924,58 @@ input, textarea{
 
 
 #a25{
-    top: 455vw;
+    top: 505vw;
     left: 80vw;
     height: 17vw;
     rotate: 170deg;
 }
 
 #a26{
-    top: 405vw;
-    left: 50vw;
+    top: 415vw;
+    left: 45vw;
     height: 17vw;
     rotate: 170deg;
 }
 
 #a27{
-    top: 485vw;
+    top: 545vw;
     left: 87vw;
     height: 17vw;
     rotate: 170deg;
 }
 
 #a28{
-    top: 480vw;
+    top: 540vw;
     left: -7vw;
     height: 26vw;
     rotate: 120deg;
 }
 
 #a29{
-    top: 567vw;
+    top: 657vw;
     left: -1vw;
     height: 15vw;
     rotate: 120deg;
 }
 
 #a33{
-    top: 569vw;
-    left: 50vw;
+    top: 659vw;
+    left: 60vw;
     height: 17vw;
     rotate: -40deg;
 }
 
 #a31{
-    top: 229vw;
-    left: 20vw;
-    height: 17vw;
+    top: 249vw;
+    left: 28vw;
+    height: 12vw;
     rotate: -40deg;
 }
 
 #a32{
-    top: 198vw;
-    left: 20vw;
-    height: 17vw;
+    top: 219vw;
+    left: 30vw;
+    height: 10vw;
     rotate: -40deg;
 }
 
@@ -886,21 +987,21 @@ input, textarea{
 }
 
 #a35{
-    top: 630vw;
-    left: 70vw;
+    top: 725vw;
+    left: 20vw;
     height: 12vw;
     rotate: -40deg;
 }
 
 #a36{
-    top: 631vw;
+    top: 700vw;
     left: -4vw;
     height: 17vw;
     rotate: -40deg;
 }
 
 #a37{
-    top: 571vw;
+    top: 681vw;
     left: 90vw;
     height: 17vw;
     rotate: -130deg;
