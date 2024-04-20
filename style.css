@@ -45,14 +45,6 @@ html, body{
     z-index: 5;
 }
 
-/* body {
-    overflow: hidden;
-}
-
-body.content-loaded {
-    overflow: auto;
-} */
-
 /**************************************** LOADER ****************************************/
 
 #loader{
@@ -598,8 +590,8 @@ body.content-loaded {
 }
 
 #c3{
-    top: 24.5vw;
-    left: 35.5vw;
+    top: 25.5vw;
+    left: 35vw;
 }
 
 #c4{
@@ -639,12 +631,12 @@ body.content-loaded {
 
 #l5{
     top: 39vw;
-    left: 13vw;
+    left: 12.9vw;
 }
 
 #l6{
     top: 39vw;
-    left: 32.2vw;
+    left: 32vw;
 }
 
 #r1{
@@ -658,7 +650,7 @@ body.content-loaded {
 }
 
 #r5{
-    top: 26vw;
+    top: 26.8vw;
     left: 26vw;
 }
 
@@ -1198,4 +1190,186 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
     left: 90vw;
     height: 17vw;
     rotate: -130deg;
+}
+
+/**************************************** RESPONSIVE ****************************************/
+
+@media (min-width:600px) {
+    body {
+        overflow: hidden;
+    }
+    
+    body.content-loaded {
+        overflow: auto;
+    }
+}
+
+
+@media (max-width:600px) {
+    #page1{
+        z-index: 99;
+    }
+
+    #hero1{
+        margin-top: 30vw;
+    }
+
+    #hero1 h1, #hero2 h1{
+        line-height: 13vw;
+    }
+    
+    #hero-down h3{
+        font-family: joseR;
+        font-size: 3vw;
+        line-height: 3.5vw;
+    }
+
+    #about{
+        height: 222.50vw;
+        /* background-color: red; */
+        padding-top: 1px;
+    }
+    
+    #about-start{
+        margin-top: 42vw;
+    }
+    
+    #about-main h4{
+        font-family: joseL;
+        font-size: 4.5vw;
+        line-height: 5vw;
+    }
+
+    #projects{
+        height: 260.50vw;
+        /* background-color: red; */
+    }
+    
+    #projects h2{
+        font-family: joseL;
+        font-size: 5vw;
+    }
+    
+    .pros{
+        width: 70vw;
+        height: 40vw;
+    }
+    
+    .pros #h3 h3{
+        font-family: joseL;
+        font-size: 4vw;
+    }
+
+    .pros #h3{
+        top: -16%;
+    }
+    
+    #pro2{
+        top: 116vw;
+        left: 5vw;
+    }
+    
+    #pro3{
+        top: 175.5vw;
+    }
+
+    .pros i{
+        font-size: 9vw;
+        padding: 2vw  2vw;
+    }
+    
+    #pro3 i, #pro2 i, #pro1 i{
+        top: 14vw;
+        left: 75vw;
+    }
+
+    #pro2 i{
+        transform: scaleX(-1);
+        /* display: inline-block;  */
+    }
+    
+    #vist-all{
+        top: 235vw;
+        height: 33vw;
+        width: 33vw;
+    }
+    
+    #vist-all h4{
+        font-family: joseL;
+        font-size: 3vw;
+    }
+    
+    #vist-all i{
+        font-size: 9vw;
+    }
+
+    #skills{
+        height: 150vw;
+    }
+    
+    #skill-head{
+        font-size: 4.5vw;
+    }
+
+    #skill-head h1{
+        font-family: joseL;
+    }
+
+    #skills h3{
+        font-size: 3vw;
+        font-family: joseL;        
+    }
+    
+    #con-in-h1{
+        font-size: 2.1vw;
+    }
+
+    #con-in-h1 h1{
+        font-family: joseL;
+    }
+    
+    #mess-form{
+        width: 90%;
+        height: 87%;
+        z-index: 999;
+    }
+    
+    form{
+        gap: 2vw;
+    }
+    
+    input, textarea{
+        padding: 1vw;
+        height: 4vh;
+        font-size: 3vw;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.219);
+    }
+    
+    #submit{
+        padding: 1.9vw 2.9vw;
+        font-size: 3.3vw;
+        font-family: joseL;
+        width: 18vw;
+    }
+    
+    #social{
+        width: 90%;
+        font-size: 5vw;
+        z-index: 999;
+    }
+    
+    .mousefollower{
+        display: none;
+    }
+
+    #overlay-1{
+        height: 731.9vw;
+        top: 65vw;
+        z-index: 9;
+    }
+
+    #contact{
+        height: 80.5vw;
+    }
 }
