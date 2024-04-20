@@ -54,6 +54,23 @@ function about(){
   })
 }
 
+function load(){
+  document.addEventListener("DOMContentLoaded", function() {
+    // Get the loader element
+    var loader = document.getElementById("loader");
+
+    // Function to hide the loader after 7 seconds
+    function hideLoader() {
+        loader.style.display = "none";  // Hide the loader
+    }
+
+    // Set a timeout to call the hideLoader function after 7 seconds
+    setTimeout(hideLoader, 4500); // 7 seconds = 7000 milliseconds
+});
+}
+
+load();
+
 cursor();
 
 loco();

@@ -45,6 +45,193 @@ html, body{
     z-index: 5;
 }
 
+/* body {
+    overflow: hidden;
+}
+
+body.content-loaded {
+    overflow: auto;
+} */
+
+/**************************************** LOADER ****************************************/
+
+#loader{
+    z-index: 9999999;
+    /* display: none; */
+    top: 0;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    animation-name: load-off;
+    animation-duration: 6s;
+    transition: all ease 0.2;
+    /* display: none; */
+}
+
+#loader img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 18vw;
+    opacity: 0;
+}
+
+#img1{
+    opacity: 1;
+    animation-name: load1;
+    animation-duration: 3.6s;
+}
+
+#img2{
+    animation-name: load2;
+    animation-duration: 3.6s;
+}
+
+#img3{
+    animation-name: load3;
+    animation-duration: 3.6s;
+}
+
+#img4{
+    animation-name: load4;
+    animation-duration: 3.6s;
+}
+
+#img5{
+    animation-name: load5;
+    animation-duration: 3.6s;
+}
+
+#img6{
+    animation-name: load6;
+    animation-duration: 3.6s;
+}
+
+#img7{
+    /* opacity: 1; */
+    animation-name: load7;
+    animation-duration: 7s;
+}
+
+@keyframes load-off {
+    0%{
+        display: block !important;
+    }
+    57%{
+        /* top: 0; */
+        scale: 1;
+        opacity: 1;
+    }
+    99.9%{
+        display: block;
+    }
+    100%{
+        display: none;
+        scale: 320;
+        /* top: -100%; */
+        opacity: 0;
+    }
+    
+}
+
+@keyframes load1 {   
+    11%{
+        opacity: 1;
+    }
+    11.1%{
+        opacity: 0;
+    }
+}
+
+@keyframes load2 {
+    11%{
+        opacity: 0;
+    }
+    11.1%{
+        opacity: 1;
+    }   
+    22%{
+        opacity: 1;
+    }
+    22.1%{
+        opacity: 0;
+    }
+}
+
+@keyframes load3 {
+    22%{
+        opacity: 0;
+    }
+    22.1%{
+        opacity: 1;
+    }   
+    33%{
+        opacity: 1;
+    }
+    33.1%{
+        opacity: 0;
+    }
+}
+
+@keyframes load4 {
+    33%{
+        opacity: 0;
+    }
+    33.1%{
+        opacity: 1;
+    }   
+    44%{
+        opacity: 1;
+    }
+    44.1%{
+        opacity: 0;
+    }
+}
+
+@keyframes load5 {
+    44%{
+        opacity: 0;
+    }
+    44.1%{
+        opacity: 1;
+    }   
+    56%{
+        opacity: 1;
+    }
+    56.1%{
+        opacity: 0;
+    }
+}
+
+@keyframes load6 {
+    55.1%{
+        opacity: 0;
+    }
+    55.2%{
+        opacity: 1;
+    }   
+    66%{
+        opacity: 1;
+    }
+    66.1%{
+        opacity: 0;
+    }
+}
+
+@keyframes load7 {
+    32%{
+        opacity: 0;
+    }
+    32.1%{
+        opacity: 1;
+    } 
+    100%{
+        opacity: 1;
+    }  
+}
+
 /**************************************** MAIN ****************************************/
 
 #main{
@@ -52,6 +239,7 @@ html, body{
     width: 100vw;
     background: rgb(8,8,8);
     background: linear-gradient(109deg, rgb(2, 2, 2) 0%, rgb(20, 20, 20) 35%, rgb(5, 5, 5) 100%);
+    overflow: hidden;
 }
 
 /**************************************** #PAGE1 ****************************************/
