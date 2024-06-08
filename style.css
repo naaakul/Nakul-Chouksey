@@ -1657,4 +1657,20 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
     #contact{
         height: 80.5vw;
     }
+
+    #l5{
+        left: 11.8vw;
+    }
+
+    #l6{
+        left: 29vw;
+    }
+
+    #c3{
+        left: 33.8vw;
+    }
+
+    #r5{
+        left: 24.8vw;
+    }
 }
